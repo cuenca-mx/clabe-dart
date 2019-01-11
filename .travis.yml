@@ -1,3 +1,6 @@
+notifications:
+  slack: cuencafinance:6N0IaVciA0KyNylSTq5ZzW4I
+
 language: dart
 
 dart:
