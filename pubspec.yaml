@@ -1,7 +1,7 @@
 name: clabe
 description: A starting point for Dart libraries or applications.
 # version: 1.0.0
-# author: Gregorio Castro <gregorio@cuenca.com>
+# author: Cuenca <dev@cuenca.com>
 
 environment:
   sdk: '>=2.1.0 <3.0.0'
