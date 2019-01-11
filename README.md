@@ -2,7 +2,6 @@
 Dart 2.1.0 o superior.
 
 ## Uso básico
-
 Obtener el dígito de control de un número CLABE
 ```dart
 import 'package:clabe-dart/clabe-dart.dart';
@@ -11,7 +10,6 @@ main() {
   compute_control_digit('03218000011835971');
 }
 ```
-
 
 Para validar si un número CLABE es válido
 ```dart

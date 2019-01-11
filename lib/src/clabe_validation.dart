@@ -1,4 +1,6 @@
 import 'banks.dart';
+import 'validations.dart';
+
 const CLABE_LENGTH = 18;
 const CLABE_WEIGHTS = [3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7];
 
@@ -47,20 +49,4 @@ String get_bank_name(String code) {
     return null;
   }
   return bank;
-}
-
-// Determine if a String is digit
-bool isDigit(String s) {
-  if(s == null) {
-    return false;
-  }
-  int N = s.length;
-  for (var i = 0; i < N; i++) {
-    try {
-      int.parse(s[i]);
-    } catch (e) {
-      return false;
-    }
-  }
-  return true;
 }
