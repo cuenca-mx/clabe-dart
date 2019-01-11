@@ -1,4 +1,4 @@
-var BankCode = {
+var bankCode = {
   '002' : 'BANAMEX',
   '006' : 'BANCOMEXT',
   '009' : 'BANOBRAS',

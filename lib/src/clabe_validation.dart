@@ -5,37 +5,36 @@ const CLABE_LENGTH = 18;
 const CLABE_WEIGHTS = [3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7];
 
 
-String compute_control_digit(String clabe) {
+String computeControlDigit(String clabe) {
   /*
   Compute CLABE control digit according to
   https://es.wikipedia.org/wiki/CLABE#D.C3.ADgito_control
   */
-  var clabe_list = clabe.split('');
-  var clabe_int = clabe_list.map((i) => int.parse(i)).toList();
+  final clabeList = clabe.split('');
+  final clabeInt = clabeList.map((i) => int.parse(i)).toList();
   var weighted = [];
   for (var i = 0; i < CLABE_LENGTH - 1; i++) {
-    weighted.add(clabe_int[i] * CLABE_WEIGHTS[i] % 10);
+    weighted.add(clabeInt[i] * CLABE_WEIGHTS[i] % 10);
   }
   int summed = weighted.reduce((curr, next) => curr + next) % 10;
-  int control_digit = (10 - summed) % 10;
-  var a = 5;
-  return control_digit.toString();
+  int controlDigit = (10 - summed) % 10;
+  return controlDigit.toString();
 }
 
 
-bool validate_clabe(String clabe) {
+bool validateClabe(String clabe) {
   /*
     Validate CLABE according to
     https://es.wikipedia.org/wiki/CLABE#D.C3.ADgito_control
   */
   return (isDigit(clabe) &&
       clabe.length == CLABE_LENGTH &&
-      get_bank_name(clabe.substring(0,3)) != null &&
-      clabe.substring(CLABE_LENGTH-1) == compute_control_digit(clabe));
+      getBankName(clabe.substring(0,3)) != null &&
+      clabe.substring(CLABE_LENGTH-1) == computeControlDigit(clabe));
 }
 
 
-String get_bank_name(String code) {
+String getBankName(String code) {
   /*
     Regresa el nombre del banco basado en los primeros 3 digitos
     https://es.wikipedia.org/wiki/CLABE#D.C3.ADgito_control
@@ -44,7 +43,7 @@ String get_bank_name(String code) {
   */
   String bank;
   try {
-    bank = BankCode[code];
+    bank = bankCode[code];
   } catch (e) {
     return null;
   }

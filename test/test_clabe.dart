@@ -12,18 +12,18 @@ void main() {
   });
 
   test('Compute control digit', () {
-    expect(compute_control_digit(VALID_CLABE.substring(0,17)), equals(VALID_CLABE.substring(17)));
+    expect(computeControlDigit(VALID_CLABE.substring(0,17)), equals(VALID_CLABE.substring(17)));
   });
 
   test('Validate clabe', () {
-    expect(validate_clabe(VALID_CLABE), equals(true));
-    expect(validate_clabe(INVALID_CLABE), equals(false));
+    expect(validateClabe(VALID_CLABE), equals(true));
+    expect(validateClabe(INVALID_CLABE), equals(false));
   });
 
   test('Get bank name', () {
-    expect(get_bank_name('002'), equals('BANAMEX'));
-    expect(get_bank_name('989'), equals(null));
-    expect(get_bank_name('99999999'), equals(null));
+    expect(getBankName('002'), equals('BANAMEX'));
+    expect(getBankName('989'), equals(null));
+    expect(getBankName('99999999'), equals(null));
   });
 
 }
