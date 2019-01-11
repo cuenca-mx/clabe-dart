@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/cuenca-mx/clabe-dart.svg?branch=master)](https://travis-ci.com/cuenca-mx/clabe-dart)
+
 ## Requerimientos
 Dart 2.1.0 o superior.
 
