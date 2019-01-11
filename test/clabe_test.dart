@@ -1,4 +1,5 @@
 import 'package:test/test.dart';
+import 'package:coveralls/coveralls.dart';
 
 import 'package:clabe/clabe-dart.dart';
 
