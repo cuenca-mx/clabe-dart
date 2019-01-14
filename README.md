@@ -6,7 +6,7 @@ Dart 2.1.0 o superior.
 ## Uso básico
 Obtener el dígito de control de un número CLABE
 ```dart
-import 'package:clabe-dart/clabe-dart.dart';
+import 'package:clabe_dart/clabe_dart.dart';
 
 main() {
   computeControlDigit('03218000011835971');
@@ -15,7 +15,7 @@ main() {
 
 Para validar si un número CLABE es válido
 ```dart
-import 'package:clabe-dart/clabe-dart.dart';
+import 'package:clabe_dart/clabe_dart.dart';
 
 main() {
   validateClabe('03218000011835971');
@@ -24,7 +24,7 @@ main() {
 
 Para obtener el banco a partir de 3 dígitos
 ```dart
-import 'package:clabe-dart/clabe-dart.dart';
+import 'package:clabe_dart/clabe_dart.dart';
 
 main() {
   getBankName('002');

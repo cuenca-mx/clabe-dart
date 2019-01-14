@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import 'package:clabe/clabe-dart.dart';
+import 'package:clabe_dart/clabe_dart.dart';
 
 
 void main() {

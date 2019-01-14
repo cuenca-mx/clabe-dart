@@ -1,7 +1,8 @@
-name: clabe
-description: A starting point for Dart libraries or applications.
-# version: 1.0.0
-# author: Cuenca <dev@cuenca.com>
+name: clabe_dart
+description: Validate a CLABE in Mexico.
+version: 1.0.0
+author: Cuenca <dev@cuenca.com>
+homepage: https://github.com/cuenca-mx/clabe-dart
 
 environment:
   sdk: '>=2.1.0 <3.0.0'
