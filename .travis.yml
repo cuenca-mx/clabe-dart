@@ -1,4 +1,11 @@
+notifications:
+  slack: cuencafinance:6N0IaVciA0KyNylSTq5ZzW4I
+
 language: dart
 
-dart:
-  - stable
+jobs:
+  include:
+    - stage: code coverage
+      install: pub global activate dart_coveralls
+      script:
+      -  dart_coveralls report --token=CLABE_DART_COVERALLS_TOKEN test/clabe_test.dart
