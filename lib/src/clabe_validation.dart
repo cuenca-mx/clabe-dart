@@ -4,7 +4,6 @@ import 'validations.dart';
 const CLABE_LENGTH = 18;
 const CLABE_WEIGHTS = [3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7];
 
-
 String computeControlDigit(String clabe) {
   /*
   Compute CLABE control digit according to
@@ -21,7 +20,6 @@ String computeControlDigit(String clabe) {
   return controlDigit.toString();
 }
 
-
 bool validateClabe(String clabe) {
   /*
     Validate CLABE according to
@@ -29,10 +27,9 @@ bool validateClabe(String clabe) {
   */
   return (isDigit(clabe) &&
       clabe.length == CLABE_LENGTH &&
-      getBankName(clabe.substring(0,3)) != null &&
-      clabe.substring(CLABE_LENGTH-1) == computeControlDigit(clabe));
+      getBankName(clabe.substring(0, 3)) != null &&
+      clabe.substring(CLABE_LENGTH - 1) == computeControlDigit(clabe));
 }
-
 
 String getBankName(String code) {
   /*
