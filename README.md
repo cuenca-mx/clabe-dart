@@ -9,7 +9,7 @@ Obtener el dígito de control de un número CLABE
 import 'package:clabe_dart/clabe_dart.dart';
 
 main() {
-  computeControlDigit('03218000011835971');
+  computeControlDigit('00200000000000000');
 }
 ```
 
@@ -18,15 +18,15 @@ Para validar si un número CLABE es válido
 import 'package:clabe_dart/clabe_dart.dart';
 
 main() {
-  validateClabe('03218000011835971');
+  validateClabe('002000000000000008');
 }
 ```
 
-Para obtener el banco a partir de 3 dígitos
+Para obtener el banco a partir de la clabe
 ```dart
 import 'package:clabe_dart/clabe_dart.dart';
 
 main() {
-  getBankName('002');
+  getBankName('002000000000000008');
 }
 ```
