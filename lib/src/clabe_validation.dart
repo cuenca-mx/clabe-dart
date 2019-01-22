@@ -27,22 +27,18 @@ bool validateClabe(String clabe) {
   */
   return (isDigit(clabe) &&
       clabe.length == CLABE_LENGTH &&
-      getBankName(clabe.substring(0, 3)) != null &&
+      banks.containsKey(clabe.substring(0, 3)) &&
       clabe.substring(CLABE_LENGTH - 1) == computeControlDigit(clabe));
 }
 
-String getBankName(String code) {
+String getBankName(String clabe) {
   /*
     Regresa el nombre del banco basado en los primeros 3 digitos
     https://es.wikipedia.org/wiki/CLABE#D.C3.ADgito_control
-    :param code: Código de 3 digitos
-    :return: Banco que corresponde al código, regresa None si no se encuentra
   */
-  String bank;
-  try {
-    bank = bankCode[code];
-  } catch (e) {
-    return null;
-  }
+  String code = clabe.substring(0, 3);
+  String bank = bankNames[banks[code]];
+
+  if (bank == null) throw Exception('Ningún banco tiene código ${code}');
   return bank;
 }

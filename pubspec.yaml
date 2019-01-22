@@ -1,6 +1,6 @@
 name: clabe_dart
 description: Validate a CLABE (Clave Bancaria Estandarizada), calculate the control digit and get the name of the bank.
-version: 1.0.2
+version: 1.1.0
 author: Cuenca <dev@cuenca.com>
 homepage: https://github.com/cuenca-mx/clabe-dart
 

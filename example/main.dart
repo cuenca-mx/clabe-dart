@@ -1,9 +1,10 @@
 import 'package:clabe_dart/clabe_dart.dart';
 
 main() {
-  String VALID_CLABE = '032180000118359719';
-  String INVALID_CLABE = '032180343334594716';
+  String VALID_CLABE = '002000000000000008';
+  String INVALID_CLABE = '002000000000000007';
 
   print(validateClabe(VALID_CLABE));
   print(validateClabe(INVALID_CLABE));
+  print(getBankName(VALID_CLABE));
 }
