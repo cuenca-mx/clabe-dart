@@ -1,4 +1,4 @@
-var banks = {
+const Map<String, String> banks = {
   '138': '40138',
   '102': '40102',
   '614': '90614',
@@ -94,7 +94,7 @@ var banks = {
 };
 
 // Descargado de http://www.banxico.org.mx/cep/ por 2019-01-21
-var bankNames = {
+const Map<String, String> bankNames = {
   '40138': 'ABC Capital',
   '40102': 'Accendo Banco',
   '90614': 'Accival',
