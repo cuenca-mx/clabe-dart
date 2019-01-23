@@ -4,7 +4,6 @@ import 'validations.dart';
 const CLABE_LENGTH = 18;
 const CLABE_WEIGHTS = [3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7, 1, 3, 7];
 
-
 String computeControlDigit(String clabe) {
   /*
   Compute CLABE control digit according to
@@ -21,7 +20,6 @@ String computeControlDigit(String clabe) {
   return controlDigit.toString();
 }
 
-
 bool validateClabe(String clabe) {
   /*
     Validate CLABE according to
@@ -29,23 +27,18 @@ bool validateClabe(String clabe) {
   */
   return (isDigit(clabe) &&
       clabe.length == CLABE_LENGTH &&
-      getBankName(clabe.substring(0,3)) != null &&
-      clabe.substring(CLABE_LENGTH-1) == computeControlDigit(clabe));
+      banks.containsKey(clabe.substring(0, 3)) &&
+      clabe.substring(CLABE_LENGTH - 1) == computeControlDigit(clabe));
 }
 
-
-String getBankName(String code) {
+String getBankName(String clabe) {
   /*
     Regresa el nombre del banco basado en los primeros 3 digitos
     https://es.wikipedia.org/wiki/CLABE#D.C3.ADgito_control
-    :param code: Código de 3 digitos
-    :return: Banco que corresponde al código, regresa None si no se encuentra
   */
-  String bank;
-  try {
-    bank = bankCode[code];
-  } catch (e) {
-    return null;
-  }
+  String code = clabe.substring(0, 3);
+  String bank = bankNames[banks[code]];
+
+  if (bank == null) throw Exception('Ningún banco tiene código ${code}');
   return bank;
 }
