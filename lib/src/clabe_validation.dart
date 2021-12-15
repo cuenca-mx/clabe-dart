@@ -37,7 +37,7 @@ String getBankName(String clabe) {
     https://es.wikipedia.org/wiki/CLABE#D.C3.ADgito_control
   */
   String code = clabe.substring(0, 3);
-  String bank = bankNames[banks[code]];
+  String? bank = bankNames[banks[code]];
 
   if (bank == null) throw Exception('Ningún banco tiene código ${code}');
   return bank;
