@@ -1,4 +1,5 @@
 const Map<String, String> banks = {
+  '706':'90706',
   '138': '40138',
   '102': '40102',
   '614': '90614',
@@ -100,6 +101,7 @@ const Map<String, String> bankNames = {
   '40133': 'Actinver',
   '40062': 'Afirme',
   '90638': 'Akala',
+  '90706': 'Arcus',
   '40103': 'American Express',
   '90652': 'Asea',
   '90659': 'Asp Integra Opc',
