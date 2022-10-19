@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1.3
         with:
-          sdk: 1.10.5
+          sdk: 2.10.5
       - name: Install dependencies
         run: dart pub get
       - name: Lint
