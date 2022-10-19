@@ -3,7 +3,7 @@ name: Dart
 on: push
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,5 +14,14 @@ jobs:
         run: dart pub get
       - name: Lint
         run: dart format --output=none --set-exit-if-changed .
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+        with:
+          sdk: 2.10.5
+      - name: Install dependencies
+        run: dart pub get
       - name: Tests
         run: dart test
