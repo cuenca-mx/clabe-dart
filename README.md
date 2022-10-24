@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/cuenca-mx/clabe-dart.svg?branch=master)](https://travis-ci.com/cuenca-mx/clabe-dart)
-[![Coverage Status](https://coveralls.io/repos/github/cuenca-mx/clabe-dart/badge.svg?branch=master)](https://coveralls.io/github/cuenca-mx/clabe-dart?branch=master)
+[![codecov](https://codecov.io/gh/cuenca-mx/clabe-dart/branch/master/graph/badge.svg?token=M1WFOK5GUU)](https://codecov.io/gh/cuenca-mx/clabe-dart)
 ## Requerimientos
 Dart 2.1.0 o superior.
 

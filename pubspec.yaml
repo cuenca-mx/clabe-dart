@@ -11,4 +11,3 @@ environment:
 
 dev_dependencies:
   test: ^1.5.1+1
-  dart_coveralls: ^0.6.0+4
