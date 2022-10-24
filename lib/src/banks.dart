@@ -154,7 +154,7 @@ const Map<String, String> bankNames = {
   '40132': 'Multiva Banco',
   '90613': 'Multiva Cbolsa',
   '37135': 'Nafin',
-  '90710': 'Nvio',
+  '90710': 'NVIO',
   '90684': 'Opm',
   '40148': 'Pagatodo',
   '90620': 'Profuturo',
