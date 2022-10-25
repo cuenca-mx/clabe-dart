@@ -1,5 +1,4 @@
 const Map<String, String> banks = {
-  '706': '90706',
   '138': '40138',
   '133': '40133',
   '062': '40062',
@@ -82,7 +81,7 @@ const Map<String, String> banks = {
   '605': '90605',
   '608': '90608',
   '113': '40113',
-  '141': '40141',
+  '141': '40141',         
 };
 
 // Descargado de http://www.banxico.org.mx/cep/ por 2019-01-21
