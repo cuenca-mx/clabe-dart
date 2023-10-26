@@ -82,7 +82,7 @@ const Map<String, String> banks = {
   '608': '90608',
   '113': '40113',
   '141': '40141',
-  '314': '90314',
+  '713': '90713',
 };
 
 // Descargado de http://www.banxico.org.mx/cep/ por 2019-01-21
@@ -128,7 +128,7 @@ const Map<String, String> bankNames = {
   '90652': 'Credicapital',
   '40126': 'Credit Suisse',
   '90680': 'Cristobal Colon',
-  '90314': 'Cuenca',
+  '90713': 'Cuenca',
   '40151': 'Donde',
   '90616': 'Finamex',
   '90634': 'Fincomun',
