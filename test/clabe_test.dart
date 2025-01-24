@@ -3,9 +3,10 @@ import 'package:test/test.dart';
 import 'package:clabe_dart/clabe_dart.dart';
 
 void main() {
-  String VALID_CLABE;
-  String INVALID_CLABE;
-  String INVALID_CLABE_BANK_CODE;
+  late String VALID_CLABE;
+  late String INVALID_CLABE;
+  late String INVALID_CLABE_BANK_CODE;
+
   setUp(() {
     VALID_CLABE = '002000000000000008';
     INVALID_CLABE = '002000000000000007';

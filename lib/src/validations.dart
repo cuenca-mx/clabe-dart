@@ -1,5 +1,5 @@
 // Determine if a String is digit
-bool isDigit(String s) {
+bool isDigit(String? s) {
   if (s == null) {
     return false;
   }
